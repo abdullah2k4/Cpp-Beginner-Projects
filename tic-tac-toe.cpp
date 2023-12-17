@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <conio.h>
 #include <string.h>
 using namespace std;
@@ -117,7 +116,7 @@ char Game::alternater(int counter)
 bool start()
 {
     char option;
-    cout << setfill('x') << "TIC-TAC-TOE" << endl;
+    cout << "TIC-TAC-TOE" << endl;
     cout << "Press S to start" << endl;
     cout << "Press anykey to Quit" << endl;
     option = getch();
