@@ -1,3 +1,1 @@
-CODSOFT
-<br>
 CODSOFT C++ internship (PROJRCTS/TASKS)
