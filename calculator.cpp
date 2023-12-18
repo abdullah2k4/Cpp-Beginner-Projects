@@ -9,8 +9,6 @@ float result;
 public:
 void set_number1(float a);
 void set_number2(float a);
-void set_result(float a);
-float get_result();
 void opt(char opt);
 };
 void Calculator:: opt(char opt)
@@ -29,13 +27,13 @@ void Calculator:: opt(char opt)
         case '-':{result=number_1-number_2;
         cout<<number_1<<" - "<<number_2<<" = "<<result<<endl;
         }break;
+        default: 
+        {cout<<"wrong operator ";}
         
     }
 }
 void Calculator:: set_number1(float a){number_1=a;}
 void Calculator:: set_number2(float a){number_2=a;}
-void Calculator:: set_result(float a){result=a;}
-float Calculator:: get_result(){return result;}
 int main()
 {
     float no_1,no_2;
