@@ -66,17 +66,24 @@ void Game::display()
         for (int j = 0; j < 3; j++)
         {
             if (board[i][j] == 'X')
-                cout << "\033[1;31;40mX\033[0m"
-                     << " ";
+                cout << "\033[1;31;40mX\033[0m";
             else if (board[i][j] == 'O')
-                cout << "\033[22;34mO\033[0m"
-                     << " ";
+                cout << "\033[22;34mO\033[0m";
             else
-                cout << board[i][j] << ' ';
+                cout << board[i][j];
+
+            if (j != 2)
+                cout << " | ";
         }
+
+        if (i != 2)
+            cout << endl
+                 << "----------";
+
         cout << endl;
     }
 }
+
 void Game::move(int a, char c)
 {
     int x, y;
@@ -135,8 +142,8 @@ int main()
     string name;
     do
     {
-    Game a;
-    int counter = 1;
+        Game a;
+        int counter = 1;
         if (start())
         {
             // system("cls");
