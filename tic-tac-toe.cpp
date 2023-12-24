@@ -82,6 +82,7 @@ void Game::display()
 
         cout << endl;
     }
+    cout<<endl;
 }
 
 void Game::move(int a, char c)
