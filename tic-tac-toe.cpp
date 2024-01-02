@@ -70,7 +70,7 @@ void Game::display()
             else if (board[i][j] == 'O')
                 cout << "\033[22;34mO\033[0m";
             else
-                cout << board[i][j];
+                cout << "\033[1;32m"<<board[i][j]<<"\033[0m";
 
             if (j != 2)
                 cout << " | ";
@@ -82,7 +82,7 @@ void Game::display()
 
         cout << endl;
     }
-    cout<<endl;
+    cout << endl;
 }
 
 void Game::move(int a, char c)
