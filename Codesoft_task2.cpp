@@ -64,6 +64,7 @@ void Calculator::opt(char opt)
         do
         {
             Calculator a;
+            system("cls");
             cout << "Enter first number: ";
             cin >> no_1;
             a.set_number1(no_1);

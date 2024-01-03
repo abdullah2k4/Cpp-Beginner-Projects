@@ -33,9 +33,9 @@ public:
 };
 void Game::set_players()
 {
-    cout << "Enter the name of first player" << endl;
+    cout << "Enter the name of first player : ";
     cin >> player1;
-    cout << "Enter the name of Secound player" << endl;
+    cout << "Enter the name of Secound player : ";
     cin >> player2;
 }
 string Game::get_player1() { return player1; }

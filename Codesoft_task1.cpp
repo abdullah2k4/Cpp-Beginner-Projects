@@ -20,18 +20,18 @@ int main()
 
             if (number < guess)
             {
-                cout << "The number is less than your guessed number\n";
+                cout << "\t\033[1;31;40mThe number is less than your guessed number\033[0m \n";
                 ++attempt;
             }
             else if (number > guess)
             {
-                cout << "The number is greater than your guessed number\n";
+                cout << "\t\033[1;31;40mThe number is greater than your guessed number\033[0m \n";
                 ++attempt;
             }
 
         } while (number != guess);
 
-        cout << "Congratulations! Guessed the number in " << attempt << " attempt!!\n";
+        cout << "\e[0;32mCongratulations! You guessed the number in " << attempt << " attempt!!\033[0m\n";
         cout << "Press 'y' to play again: ";
         cin >> option;
         system("cls");
