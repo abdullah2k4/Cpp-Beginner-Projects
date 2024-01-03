@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-
+using namespace std;
 int main()
 {
     char option;
@@ -15,25 +15,25 @@ int main()
 
         do
         {
-            std::cout << "Attempt number " << attempt << "\nGuess the number between 1 to 100: ";
-            std::cin >> guess;
+            cout << "Attempt number " << attempt << "\nGuess the number between 1 to 100: ";
+            cin >> guess;
 
             if (number < guess)
             {
-                std::cout << "The number is less than your guessed number\n";
+                cout << "The number is less than your guessed number\n";
                 ++attempt;
             }
             else if (number > guess)
             {
-                std::cout << "The number is greater than your guessed number\n";
+                cout << "The number is greater than your guessed number\n";
                 ++attempt;
             }
 
         } while (number != guess);
 
-        std::cout << "Congratulations! Guessed the number in " << attempt << " attempt!!\n";
-        std::cout << "Press 'y' to play again: ";
-        std::cin >> option;
+        cout << "Congratulations! Guessed the number in " << attempt << " attempt!!\n";
+        cout << "Press 'y' to play again: ";
+        cin >> option;
         system("cls");
     } while (option == 'y');
 
